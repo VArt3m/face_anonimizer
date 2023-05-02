@@ -22,5 +22,5 @@ jobs:
         - run: pyinstaller gui.spec
         - uses: actions/upload-artifact@v3
           with:
-            name: portable-{{ matrix.os }}
+            name: portable-${{ matrix.os }}
             path: dist/*
